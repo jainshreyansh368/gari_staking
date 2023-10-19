@@ -1,0 +1,30 @@
+[package]
+name = "staking-web-api"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-trait = "0.1.68"
+bs58 = "0.4.0"
+chrono = "0.4.24"
+datadog-apm = { version = "0.2.1", git = "https://github.com/rosarp/datadog-apm-rust.git" }
+ed25519-dalek = "1.0.1"
+hmac = "0.12.1"
+jwt = "0.16.0"
+log = "0.4.17"
+rand = "0.8.5"
+reqwest = { version = "0.11.16", default-features = false, features = ["json", "rustls-tls"] }
+rocket = { version = "0.5.0-rc.3", features = ["json"] }
+sea-orm = { version = "0.11.2", features = ["sqlx-postgres", "runtime-tokio-rustls", "macros"] }
+sea-orm-rocket = "0.5.2"
+sha2 = "0.10.6"
+staking-db-entity = { path = "../staking-db-entity" }
+strum = { version = "0.24.1", features = ["derive", "strum_macros"] }
+strum_macros = "0.24.3"
+tokio = "1.27.0"
+tracing = "0.1.37"
+tracing-subscriber = { version = "0.3.16", features = ["env-filter"] }
+uint = "0.9.5"
+uuid = { version = "1.3.1", features = ["v5", "sha1"] }

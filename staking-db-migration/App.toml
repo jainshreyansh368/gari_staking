@@ -1,0 +1,2 @@
+database_url = "postgres://postgres:SuperSecret@localhost:5455/staking"
+db_migration_instruction = "fresh"

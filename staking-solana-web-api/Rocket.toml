@@ -1,0 +1,16 @@
+[default]
+on_chain_endpoint = "https://api.devnet.solana.com"
+staking_program_address = "4F531NBnaBYquFVpde2Atc3NpcTcRYkNRgcoZ2XT1Tza"
+staking_account_address = "G2fV9BvL36qxVUSGmCmnc6ab8TPg4S1cGajXewbWM6Rw"
+staking_account_token_mint = "7gjQaUHVdP8m7BvrFWyPkM7L3H9p4umwm3F56q1qyLk1"
+staking_holding_wallet_owner = "C8EfwCYCxWkaT2yZWECip93dcxbMiHwgYLcazgkfXuhW"
+solana_web_api_rust_log = "info"
+fee_payer_address = ""
+fee_payer_private_key = ""
+send_transaction_simulate = true
+staking_holding_wallet = "Hmn35143VCdGu2dGDSwefHTLtjFxJMtUr9BrpB3PACV5"
+funding_wallet_buffer = "10"
+interest_buffer = "7"
+port = 8002
+funding_wallet_address = ""
+funding_wallet_private_key = ""

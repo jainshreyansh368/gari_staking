@@ -1,0 +1,22 @@
+[default]
+database_url = "postgres://postgres:SuperSecret@localhost:5455/staking"
+solana_web_api_node = "http://localhost:8002"
+gari_web_api_node = "https://eks-dev-gari.chingari.io/staking"
+gari_min_unstake_amount = 10000000000
+sqlx_max_connections = 10
+sqlx_min_connections = 2
+sqlx_connect_timeout = 8
+sqlx_idle_timeout = 8
+sqlx_max_lifetime = 8
+sqlx_logging = false
+web_api_sqlx_logging_level = "info"
+rust_log = "warn"
+web_api_log = "info"
+staking_account_address = "G2fV9BvL36qxVUSGmCmnc6ab8TPg4S1cGajXewbWM6Rw"
+cors_allowed_domains = "http://localhost,http://localhost:3000,https://demo.comakery.com,https://staging.comakery.com,https://demo.upside.gg,https://upside-staking-dev.chingari.io,https://gari-demo.upside.gg"
+port = 8001
+jwt_key = "2EPkTLaK4gxvgCZcBtQvL2khFXXSvAB9VZutCB9deSu1Ym31GysiWBdMCYMxKEYHQNeaY4dLFCstf888Yr6A"
+enable_datadog = false
+datadog_host = "localhost"
+datadog_port = "8125"
+enable_maintenance = false

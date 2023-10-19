@@ -1,0 +1,22 @@
+[package]
+name = "staking-polling-service"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = "0.4.24"
+datadog-apm = { version = "0.2.1", git = "https://github.com/rosarp/datadog-apm-rust.git" }
+figment = { version = "0.10.8", features = ["toml", "env"] }
+kafka = { version = "0.9.0", features = ["openssl"] }
+log = "0.4.17"
+regex = { version = "1.8.1", features = ["unicode-case"] }
+reqwest = { version = "0.11.16", default-features = false, features = ["json", "rustls-tls"] }
+sea-orm = { version = "0.11.2", features = ["sqlx-postgres", "runtime-tokio-rustls", "macros"] }
+serde = "1.0.160"
+serde_json = "1.0.96"
+staking-db-entity = { path = "../staking-db-entity" }
+tokio = { version = "1.27.0", features = ["macros", "signal", "time"] }
+tracing = "0.1.37"
+tracing-subscriber = { version = "0.3.16", features = ["env-filter"] }

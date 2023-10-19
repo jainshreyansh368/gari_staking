@@ -1,0 +1,14 @@
+on_chain_endpoint,str
+staking_program_address,str
+staking_account_address,str
+staking_account_token_mint,str
+staking_holding_wallet_owner,str
+solana_web_api_rust_log,str
+fee_payer_address,str
+fee_payer_private_key,str
+send_transaction_simulate,bool
+staking_holding_wallet,str
+funding_wallet_buffer,str
+interest_buffer,str
+funding_wallet_private_key,str
+funding_wallet_address,str
